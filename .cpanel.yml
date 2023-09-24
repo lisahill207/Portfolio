@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/fys98sn9wrre/repositories/Portfolio/
+    - /bin/cp -R Portfolio $DEPLOYPATH
