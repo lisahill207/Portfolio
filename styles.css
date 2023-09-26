@@ -245,18 +245,7 @@ label[for="confirm"] {
   background-repeat: no-repeat;
   background-size: cover;
 }
-#area5_empty {
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 1;
-  grid-row-end: 2;
-  width: 33vw;
-}
 #area5_bottomText {
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 1;
-  grid-row-end: 2;
   width: 33vw;
   display: flex;
   flex-direction: column;
@@ -268,10 +257,6 @@ label[for="confirm"] {
   text-align: center;
 }
 .footer_background {
-  grid-column-start: 3;
-  grid-column-end: 4;
-  grid-row-start: 1;
-  grid-row-end: 2;
   width: 33vw;
   display: flex;
   flex-direction: column;
@@ -286,20 +271,6 @@ label[for="confirm"] {
   background-color: #8f8989;
   padding-right: 5px;
   opacity: 90%;
-}
-.privacyLink {
-  color: #CCCCCC;
-  font-weight: bold;
-}
-.privacyLink:visited {
-  color: #CCCCCC;
-  font-weight: bold;
-}
-.privacyPolicy {
-  background-color: #20252d;
-  color: #CCCCCC;
-  margin: 10px;
-  font-size: 15pt;
 }
 .navTop {
   position: fixed;
