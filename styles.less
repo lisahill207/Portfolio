@@ -99,15 +99,6 @@ a:visited {
     color: @secondaryColor;
     padding-left: 1vw;
 }
-#area1_bio {
-    background-color: @secondaryColor;
-    max-width: 40vw;
-    font-size: @bioSize;
-    color: @primaryColor;
-    opacity: .8;
-    align-self: center;
-    text-align: center;
-}
 #scroll_area2{
     background-color: @primaryColor;
     display: grid;
@@ -132,8 +123,10 @@ a:visited {
     line-height: 70%;
     padding: 0px 10px;
     opacity: .8;
+    max-height: 50vh;
+    max-width: 50vw;
 }
-#area2_employment{
+#area2_bio{
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 2;
@@ -146,18 +139,14 @@ a:visited {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    line-height: 70%;
     padding: 0px 10px;
     opacity: .8;
+    max-height: 50vh;
 }
 .gradDate{
     font-weight: bold;
 }
 #degree2{
-    align-self: flex-end;
-    text-align: end;
-}
-#job2{
     align-self: flex-end;
     text-align: end;
 }
