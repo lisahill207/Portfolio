@@ -1039,17 +1039,13 @@ icons {
     border-radius: 15px;
     text-align: center;
   }
-  #area1_header {
-    font-size: 25pt;
-  }
   #scroll_area1 {
     justify-content: center;
     align-items: center;
   }
   #area1_header {
-    text-align: center;
-    position: relative;
-    z-index: 0;
+    width: 100vw;
+    font-size: 35pt;
   }
   #scroll_area2 {
     display: grid;
