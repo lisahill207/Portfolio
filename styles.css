@@ -965,6 +965,7 @@ icons {
     box-sizing: border-box;
     display: inline;
     position: fixed;
+    z-index: 1;
   }
   .hamburgerMenu {
     display: flex;
@@ -984,6 +985,7 @@ icons {
     width: 60px;
     height: 8px;
     background-color: #8f8989;
+    opacity: 0.8;
     border-radius: 9999px;
     transform-origin: left center;
     transition: opacity 200ms ease-in-out, width 200ms ease-in-out, rotate 200ms ease-in-out, translate 200ms ease-in-out, background-color 200ms ease-in-out;
