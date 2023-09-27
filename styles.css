@@ -50,18 +50,17 @@ a:visited {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  margin: 0px;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: flex-end;
 }
 #area1_header {
-  width: 25vw;
   font-size: 50pt;
+  text-align: center;
   background-color: #20252d;
   opacity: 0.7;
   color: #CCCCCC;
-  padding-left: 1vw;
+  padding: 1vw;
 }
 #scroll_area2 {
   background-color: #20252d;
@@ -956,11 +955,6 @@ icons {
   font-size: 25pt;
   padding: 10px;
 }
-@media only screen and (max-width: 800px) {
-  .form {
-    max-width: 90vw;
-  }
-}
 @media only screen and (max-width: 600px) {
   .navbar {
     display: none;
@@ -1046,10 +1040,10 @@ icons {
     text-align: center;
   }
   #area1_header {
-    margin: 0;
+    font-size: 25pt;
   }
   #scroll_area1 {
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
   }
   #area1_header {

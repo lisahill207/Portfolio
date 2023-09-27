@@ -4,6 +4,7 @@
 @secondaryColor: #CCCCCC;
 @gridGap: 15px;
 @titleSize: 50pt;
+@mobileTitleSize: 25pt;
 @bioSize: 25pt;
 @iconSize: 75pt;
 @nav-font-size: 12pt;
@@ -81,18 +82,17 @@ a:visited {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    margin: 0px;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: flex-end;
 }
 #area1_header {
-    width: 25vw;
     font-size: @titleSize;
+    text-align: center;
     background-color: @primaryColor;
     opacity: .7;
     color: @secondaryColor;
-    padding-left: 1vw;
+    padding: 1vw;
 }
 #scroll_area2{
     background-color: @primaryColor;
@@ -970,9 +970,7 @@ icons{
     padding: 10px;
 }
 @media only screen and (max-width: 800px){
-    .form{
-        max-width: 90vw;
-    }
+
 }
 @media only screen and (max-width: 600px){
     .navbar {
@@ -1055,10 +1053,10 @@ icons{
         text-align: center;
     }
     #area1_header{
-        margin: 0;
+        font-size: @mobileTitleSize;
     }
     #scroll_area1{
-        justify-content: flex-end;
+        justify-content: center;
         align-items: center;
     }
     #area1_header{
