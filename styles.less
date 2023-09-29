@@ -2,6 +2,7 @@
 @navColor: #8f8989;
 @primaryColor: #20252d;
 @secondaryColor: #CCCCCC;
+@textureColor: #0c0e12;
 @gridGap: 15px;
 @titleSize: 50pt;
 @mobileTitleSize: 35pt;
@@ -96,8 +97,15 @@ a:visited {
     color: @secondaryColor;
     padding: 1vw;
 }
-#scroll_area2{
+.textured{
     background-color: @primaryColor;
+    background-image:
+        radial-gradient(circle at 100% 100%, transparent .25rem, @textureColor .25rem, @textureColor .375rem, transparent .375rem),
+        radial-gradient(circle at 0% 0%, transparent .25rem, @textureColor .25rem, @textureColor .375rem, transparent .375rem);
+    background-size: 2rem 2rem;
+    background-position: 0rem 0rem, 0 3.3rem;
+}
+#scroll_area2{
     display: grid;
     row-gap: @gridGap;
     column-gap: @gridGap;
@@ -155,7 +163,6 @@ a:visited {
     width: 33vw;
 }
 #scroll_area3, #scroll_area4{
-    background-color: @primaryColor;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -228,11 +235,6 @@ icons{
 }
 #area5_content{
     height: 75vh;
-    background-color: @primaryColor;
-    font-size: @titleSize;
-    color: @secondaryColor;
-    display:flex;
-    flex-direction: row;
 }
 #area5_header{
     justify-self: flex-start;

@@ -62,8 +62,13 @@ a:visited {
   color: #CCCCCC;
   padding: 1vw;
 }
-#scroll_area2 {
+.textured {
   background-color: #20252d;
+  background-image: radial-gradient(circle at 100% 100%, transparent 0.25rem, #0c0e12 0.25rem, #0c0e12 0.375rem, transparent 0.375rem), radial-gradient(circle at 0% 0%, transparent 0.25rem, #0c0e12 0.25rem, #0c0e12 0.375rem, transparent 0.375rem);
+  background-size: 2rem 2rem;
+  background-position: 0rem 0rem, 0 3.3rem;
+}
+#scroll_area2 {
   display: grid;
   row-gap: 15px;
   column-gap: 15px;
@@ -122,7 +127,6 @@ a:visited {
 }
 #scroll_area3,
 #scroll_area4 {
-  background-color: #20252d;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -196,11 +200,6 @@ icons {
 }
 #area5_content {
   height: 75vh;
-  background-color: #20252d;
-  font-size: 50pt;
-  color: #CCCCCC;
-  display: flex;
-  flex-direction: row;
 }
 #area5_header {
   justify-self: flex-start;
