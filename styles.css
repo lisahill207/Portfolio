@@ -1027,12 +1027,13 @@ icons {
   .hamburgerMenu:has(input:checked) + .sidebar {
     translate: 0;
   }
-  .asideLink::before,
-  .asideLink::after {
-    text-decoration: none;
+  .asideLink {
     cursor: pointer;
+    text-decoration: none;
   }
-  .asideLi {
+  .asideLi,
+  .asideLi:visited {
+    color: #20252d;
     list-style-type: none;
     font-size: 12pt;
     padding: 5px;
