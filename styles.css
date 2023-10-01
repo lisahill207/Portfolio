@@ -1027,7 +1027,8 @@ icons {
   .hamburgerMenu:has(input:checked) + .sidebar {
     translate: 0;
   }
-  .asideLink {
+  .asideLink::before,
+  .asideLink::after {
     text-decoration: none;
     cursor: pointer;
   }

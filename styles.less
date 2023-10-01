@@ -973,9 +973,6 @@ icons{
     font-size: 25pt;
     padding: 10px;
 }
-@media only screen and (max-width: 800px){
-
-}
 @media only screen and (max-width: 600px){
     .navbar {
         display: none;
@@ -1045,7 +1042,7 @@ icons{
     .hamburgerMenu:has(input:checked) + .sidebar {
         translate: 0;
     }
-    .asideLink {
+    .asideLink::before, .asideLink::after {
         text-decoration: none;
         cursor: pointer;
     }
