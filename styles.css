@@ -1,7 +1,7 @@
 :root{
   --nav-color: #8f8989;
   --primary-color: #20252d;
-  --secondaryColor: #CCCCCC;
+  --secondary-color: #CCCCCC;
   --opacity: 0.7;
   --gridGap: 15px;
   --titleSize: 50pt;
@@ -71,7 +71,7 @@ body {
   padding: 15px 10px;
 }
 .nav-link {
-  background-color: var(--secondaryColor);
+  background-color: var(--secondary-color);
   opacity: var(--opacity);
   padding: 8px;
   border-radius: 15px;
@@ -81,7 +81,7 @@ body {
   font-size: 12pt;
 }
 a:visited {
-  background-color: var(--secondaryColor);
+  background-color: var(--secondary-color);
   padding: 8px;
   border-radius: 15px;
   color: var(--primary-color);
@@ -104,7 +104,7 @@ a:visited {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: var(--secondaryColor);
+  color: var(--secondary-color);
   opacity: var(--opacity);
   font-size: 5vw;
   text-align: center;
@@ -115,7 +115,7 @@ a:visited {
   height: 35px;
   list-style: none;
   opacity: 0;
-  background: radial-gradient(var(--secondaryColor), transparent, transparent);
+  background: radial-gradient(var(--secondary-color), transparent, transparent);
   bottom: 0;
   left: 10vw;
   animation: animate 15s linear infinite;
@@ -174,7 +174,7 @@ a:visited {
   align-items: center;
 }
 .form-icon {
-  color: var(--secondaryColor);
+  color: var(--secondary-color);
   opacity: var(--opacity);
   font-size: 75pt;
   text-align: center;
@@ -186,7 +186,7 @@ a:visited {
   grid-row-start: 1;
   grid-row-end: 2;
   font-size: 2.5vw;
-  color: var(--secondaryColor);
+  color: var(--secondary-color);
   opacity: var(--opacity);
   text-align: center;
   height: 49vh;
@@ -215,7 +215,7 @@ a:visited {
 }
 .title {
   font-size: 20pt;
-  color: var(--secondaryColor);
+  color: var(--secondary-color);
   font-size: 50pt;
   margin: 15px;
 }
@@ -225,7 +225,7 @@ a:visited {
   z-index: 5;
 }
 .project {
-  background-color: var(--secondaryColor);
+  background-color: var(--secondary-color);
   height: var(--projectHeight);
   width: var(--projectWidth);
   text-align: center;
@@ -233,7 +233,7 @@ a:visited {
   font-weight: bold;
 }
 .project-text, .icons {
-  background-color: var(--secondaryColor);
+  background-color: var(--secondary-color);
   opacity: 95%;
   padding: 3pt;
 }
@@ -292,7 +292,7 @@ a:visited {
   position: fixed;
   bottom: 0;
   margin: 10px;
-  background-color: var(--secondaryColor);
+  background-color: var(--secondary-color);
   padding: 8px;
   border-radius: 15px;
   text-decoration: none;
@@ -1007,9 +1007,9 @@ a:visited {
   .navbar {
     display: none;
   }
-  .mobileMenu,
-  .mobileMenu::before,
-  .mobileMenu::after {
+  .mobile-menu,
+  .mobile-menu::before,
+  .mobile-menu::after {
     box-sizing: border-box;
     display: inline;
     position: fixed;
@@ -1052,13 +1052,13 @@ a:visited {
     rotate: 45deg;
     width: calc(calc(8px * 3 + 6px * 2) * 1.41421356);
     translate: 0 calc(8px / -2);
-    background-color: var(--secondaryColor);
+    background-color: var(--secondary-color);
   }
   .hamburger-menu:has(input:checked)::after {
     rotate: -45deg;
     width: calc(calc(8px * 3 + 6px * 2) * 1.41421356);
     translate: 0 calc(8px / 2);
-    background-color: var(--secondaryColor);
+    background-color: var(--secondary-color);
   }
   .sidebar {
     transition: translate 200ms ease-in-out;
@@ -1066,7 +1066,6 @@ a:visited {
     padding: 0.5rem 1rem;
     padding-top: calc(calc(8px * 3 + 6px * 2) + 8px + 1rem);
     background-color: var(--nav-color);
-    color: var(--secondaryColor);
     font-weight: bold;
     max-width: 15rem;
     min-height: 100vh;
@@ -1079,6 +1078,7 @@ a:visited {
   .aside-link {
     cursor: pointer;
     text-decoration: none;
+    color: var(--primary-color);
   }
   .aside-li,
   .aside-li:visited {
@@ -1089,14 +1089,6 @@ a:visited {
     margin: 10px;
     border-radius: 15px;
     text-align: center;
-  }
-  #scroll-area1 {
-    justify-content: center;
-    align-items: center;
-  }
-  #area1_header {
-    width: 100vw;
-    font-size: 35pt;
   }
   #scroll-area2 {
     display: flex;
@@ -1111,7 +1103,7 @@ a:visited {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100vw;
+    height: 30vh;
   }
   #area2-bio {
     font-size: 15pt;
