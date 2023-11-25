@@ -116,7 +116,6 @@ a:visited {
   list-style: none;
   opacity: 0;
   background: radial-gradient(var(--secondary-color), transparent, transparent);
-  bottom: 0;
   left: 10vw;
   animation: animate 15s linear infinite;
   z-index: 1;
@@ -145,12 +144,12 @@ a:visited {
   0%{
       transform: scale(0);
       opacity: 0;
-      bottom: 0;
+      bottom: 2vh;
   }
   1%{
       transform: scale(0);
       opacity: 1;
-      bottom: 2vh;
+      bottom: 10vh;
   }
   100%{
       transform: scale(10);
