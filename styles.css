@@ -158,7 +158,7 @@ a:visited {
       bottom: 100vh;
   }
 }
-#animation-content-scroll-area2 {
+#scroll-area2 {
   display: grid;
   row-gap: var(--gridGap);
   column-gap: var(--gridGap);
@@ -207,7 +207,7 @@ a:visited {
   margin: 0 2vw;
   z-index: 3;
 }
-#animation-content-scroll-area3 {
+#scroll-area3 {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -265,11 +265,13 @@ a:visited {
   background-repeat: no-repeat;
   background-size: cover;
 }
-#scroll-area4 {
+#animation-content-scroll-area4 {
   max-height: 100vh;
+  margin: 0;
+  padding: 0;
 }
 #area4-content {
-  height: 75vh;
+  height: 70vh;
 }
 .area4-footer {
   height: 30vh;
@@ -284,8 +286,7 @@ a:visited {
 #area4-bottom-text {
   width: 50vw;
   color: var(--primary-color);
-  font-size: 4vw;
-  font-weight: bold;
+  font-size: 3vw;
   text-align: center;
 }
 .navTop {
