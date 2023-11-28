@@ -39,7 +39,7 @@
   --chewyLightGrey: #F5F5F5;
 }
 html {
-  scroll-snap-type: y mandatory;
+  /*scroll-snap-type: y mandatory;*/
   font-family: Arial, Helvetica, sans-serif;
   width: 100vw;
   height: 100vh;
