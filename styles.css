@@ -221,6 +221,7 @@ a:visited {
 .projects {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
   z-index: 1;
 }
 .project {
@@ -1123,10 +1124,12 @@ a:visited {
   #area3-title{
     align-self: center;
     width: 90vw;
-    font-size: 10vw;
+    height: 25vh;
+    font-size: 8vw;
     text-align: center;
   }
   .project{
-    font-size: 15px;
+    width: 40vw;
+    margin: 7px;
   }
 }
