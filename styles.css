@@ -38,6 +38,9 @@
   --chewyYellow: #FFC80F;
   --chewyLightGrey: #F5F5F5;
 }
+HTML{
+    scroll-snap-type: y mandatory;
+}
 body {
   font-family: Arial, Helvetica, sans-serif;
   width: 100vw;
@@ -83,9 +86,6 @@ a:visited {
   font-weight: bold;
   font-size: 12pt;
   text-decoration: none;
-}
-.scroll-container{
-  scroll-snap-type: y mandatory;
 }
 .scroll-area {
   height: 100vh;
@@ -274,18 +274,29 @@ a:visited {
   width: 100vw;
   margin: 0;
   padding: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+  display: grid;
 }
 #form-container{
-  width: 60vw;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  height: 70vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#form {
   height: 50vh;
+  width: 60vw;
   background-color: var(--secondary-color);
 }
 .area4-footer {
-  align-self: flex-end;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
   height: 30vh;
   width: 100vw;
   margin: 0;
