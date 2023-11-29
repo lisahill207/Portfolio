@@ -6,8 +6,6 @@
   --opacity: 0.7;
   --gridGap: 15px;
   --titleSize: 50pt;
-  --projectHeight: 40vh;
-  --projectWidth: 20vw;
   --mobileTitleSize: 35pt;
   --bioSize: 25pt;
   --mobileBioSize: 15pt;
@@ -38,9 +36,6 @@
   --chewyWhite: #ffffff;
   --chewyYellow: #FFC80F;
   --chewyLightGrey: #F5F5F5;
-}
-HTML{
-    scroll-snap-type: y mandatory;
 }
 body {
   font-family: Arial, Helvetica, sans-serif;
@@ -88,48 +83,41 @@ a:visited {
   font-size: 12pt;
   text-decoration: none;
 }
-.scroll-area {
+.view-area {
   height: 100vh;
   width: 100vw;
-  scroll-snap-align: center;
-  scroll-snap-stop: always;
   background-color: var(--primary-color);
-}
-.animation-content{
-  height: 100vh;
   z-index: 2;
+  margin: 0;
+  padding: 0;
 }
-#animation-content-scroll-area1{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: var(--secondary-color);
-  opacity: var(--opacity);
-  font-size: 5vw;
-  text-align: center;
+.animation-box {
+  position: absolute;
+  bottom: 0;
 }
-.animation-dots{
-  position: relative;
+.animation-dots {
+  position: absolute;
   width: 35px;
   height: 35px;
   list-style: none;
   opacity: 0;
   background: radial-gradient(var(--secondary-color), transparent, transparent);
-  left: 10vw;
-  animation: animate 15s linear infinite;
+  left: 5vw;
+  animation: animate 20s linear infinite;
   z-index: 1;
+  bottom: 0
 }
-.dot2{
+.dot2 {
   left: 37vw;
   animation-delay: 2s;
 }
-.dot3{
-  left: 25vw;
+.dot3 {
+  left: 15vw;
   animation-delay: 4s;
 }
 .dot4{
   left: 60vw;
-  animation-delay: 6s;
+  animation-delay: 7s;
 }
 .dot5{
   left: 75vw;
@@ -156,22 +144,56 @@ a:visited {
       bottom: 100vh;
   }
 }
-#scroll-area2 {
-  display: grid;
-  row-gap: var(--gridGap);
-  column-gap: var(--gridGap);
+.header {
+  height: 75vh;
+  font-size: 4vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--secondary-color);
+  opacity: var(--opacity);
+
 }
-#area2-bio {
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 1;
-  grid-row-end: 2;
-  font-size: 2.5vw;
+.footer {
+  width: 100vw;
+  height: 25vh;
+  margin: 0;
+  padding: 0;
+  background-image: url("Images/Antarctica.JPG");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#footer-bottom-text {
+  width: 50vw;
+  color: var(--primary-color);
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+}
+#animation-content-about{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#about-main{
+  height: 75vh;
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#about-bio {
+  font-size: 2vw;
   color: var(--secondary-color);
   opacity: var(--opacity);
   text-align: center;
-  height: 100vh;
-  max-width: 66vw;
+  max-width: 60vw;
   margin: 1vw;
   display: flex;
   flex-direction: column;
@@ -191,140 +213,87 @@ a:visited {
   opacity: 0.8;
   margin: 0 2vw;
 }
-#area2-headshot {
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 1;
-  grid-row-end: 3;
+#about-headshot {
+  margin: 0 2vw;
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#about-headshot-img{
   background-image: url("ProfessionalPhotos/hill-lisa-sq.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
-  width: 33vw;
-  margin: 0 2vw;
-  z-index: 3;
+  width: 25vw;
+  aspect-ratio: 1 / 1;
 }
-#scroll-area3 {
+#animation-content-projects{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#projects-main{
+  height: 75vh;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  max-height: 100vh;
+  align-items: center;
 }
-.title {
-  font-size: 20pt;
+#projects-title {
   color: var(--secondary-color);
+  opacity: var(--opacity);
   font-size: 50pt;
-  margin: 15px;
+  width: 100vw;
 }
 .projects {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
+  align-items: center;
   flex-wrap: wrap;
+  width: 100vw;
   z-index: 1;
 }
 .project {
   background-color: var(--secondary-color);
-  height: var(--projectHeight);
-  width: var(--projectWidth);
-  text-align: center;
-  font-size: 20pt;
-  font-weight: bold;
+  height: 30vh;
 }
 .project-text, .icons {
   background-color: var(--secondary-color);
   opacity: 95%;
   padding: 3pt;
+  font-size: 20pt;
+  text-align: center;
+  font-weight: bold;
 }
 .project-link, .project-link:visited {
   text-decoration: none;
   color: var(--primary-color);
 }
-#area3-project1 {
+#project1 {
   background-image: url("Images/appleScreenshot.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-#area3-project2 {
+#project2 {
   background-image: url("Images/dcp.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-#area3-project3 {
+#project3 {
   background-image: url("Images/movementProject.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-#area3-project4 {
+#project4 {
   background-image: url("Images/chewyScreenshot.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
-#scroll-area4 {
-  height: 100vh;
-  width: 100vw;
-  margin: 0;
-  padding: 0;
-}
-#animation-content-scroll-area4{
-  height: 100vh;
-  width: 100vw;
-  margin: 0;
-  padding: 0;
-  display: grid;
-}
-#area4-projects{
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 1;
-  grid-row-end: 2;
-  height: 70vh;
-  width: 100vw;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-  z-index: 1;
-}
-#area4-project1 {
-  background-image: url("Images/chewyScreenshot.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-#area4-project2 {
-  background-image: url("Images/chewyScreenshot.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.area4-footer {
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 2;
-  grid-row-end: 3;
-  height: 30vh;
-  width: 100vw;
-  margin: 0;
-  padding: 0;
-  background-image: url("Images/Antarctica.JPG");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-#area4-bottom-text {
-  width: 50vw;
-  color: var(--primary-color);
-  font-size: 50px;
-  font-weight: bold;
-  text-align: center;
 }
 .navTop {
   position: fixed;
