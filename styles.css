@@ -2,6 +2,7 @@
   --nav-color: #8f8989;
   --primary-color: #20252d;
   --secondary-color: #CCCCCC;
+  --off-white: #f1f1ee;
   --opacity: 0.7;
   --gridGap: 15px;
   --titleSize: 50pt;
@@ -288,9 +289,43 @@ a:visited {
   align-items: center;
 }
 #form {
-  height: 50vh;
-  width: 60vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 2vw 4vw;
+  border-radius: 10px;
+  height: 45vh;
+  width: 40vw;
   background-color: var(--secondary-color);
+}
+form h3 {
+  color: var(--primary-color);
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+form input, form textarea {
+  border: 0;
+  margin: 10px 0;
+  padding: 20px;
+  outline: none;
+  background: var(--off-white);
+  font-size: 16px;
+}
+form button {
+  padding: 10px;
+  background: var(--primary-color);
+  color: var(--secondary-color);
+  font-size: 15px;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  width: 150px;
+  margin: 20px auto 0;
+  border-radius: 30px;
 }
 .area4-footer {
   grid-column-start: 1;
