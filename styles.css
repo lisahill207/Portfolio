@@ -277,7 +277,7 @@ a:visited {
   padding: 0;
   display: grid;
 }
-#form-container{
+#area4-projects{
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 1;
@@ -285,47 +285,22 @@ a:visited {
   height: 70vh;
   width: 100vw;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap;
+  z-index: 1;
 }
-#form {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+#area4-project1 {
+  background-image: url("Images/chewyScreenshot.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-form {
-  display: flex;
-  flex-direction: column;
-  padding: 2vw 4vw;
-  border-radius: 10px;
-  height: 45vh;
-  width: 40vw;
-  background-color: var(--secondary-color);
-}
-form h3 {
-  color: var(--primary-color);
-  font-weight: 800;
-  margin-bottom: 20px;
-}
-form input, form textarea {
-  border: 0;
-  margin: 10px 0;
-  padding: 20px;
-  outline: none;
-  background: var(--off-white);
-  font-size: 16px;
-}
-form button {
-  padding: 10px;
-  background: var(--primary-color);
-  color: var(--secondary-color);
-  font-size: 15px;
-  border: 0;
-  outline: none;
-  cursor: pointer;
-  width: 150px;
-  margin: 20px auto 0;
-  border-radius: 30px;
+#area4-project2 {
+  background-image: url("Images/chewyScreenshot.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .area4-footer {
   grid-column-start: 1;
@@ -347,7 +322,8 @@ form button {
 #area4-bottom-text {
   width: 50vw;
   color: var(--primary-color);
-  font-size: 3vw;
+  font-size: 50px;
+  font-weight: bold;
   text-align: center;
 }
 .navTop {
@@ -1192,5 +1168,9 @@ form button {
   .project{
     width: 40vw;
     margin: 7px;
+  }
+  #area4-bottom-text {
+    font-size: 40px;
+    font-weight: bold;
   }
 }
