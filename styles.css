@@ -83,7 +83,7 @@ a:visited {
   font-size: 12pt;
   text-decoration: none;
 }
-.view-area {
+#view-home, #view-about {
   height: 100vh;
   width: 100vw;
   background-color: var(--primary-color);
@@ -92,7 +92,7 @@ a:visited {
   padding: 0;
 }
 .animation-box {
-  position: absolute;
+  position: relative;
   bottom: 0;
 }
 .animation-dots {
@@ -213,6 +213,9 @@ a:visited {
   opacity: 0.8;
   margin: 0 2vw;
 }
+.languages{
+  margin-bottom: 30px;
+}
 #about-headshot {
   margin: 0 2vw;
   z-index: 3;
@@ -228,6 +231,12 @@ a:visited {
   width: 25vw;
   aspect-ratio: 1 / 1;
 }
+#view-projects {
+  background-color: var(--primary-color);
+  z-index: 2;
+  margin: 0;
+  padding: 0;
+}
 #animation-content-projects{
   display: flex;
   flex-direction: column;
@@ -235,10 +244,9 @@ a:visited {
   align-items: center;
 }
 #projects-main{
-  height: 75vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
 }
 #projects-title {
@@ -248,16 +256,23 @@ a:visited {
   width: 100vw;
 }
 .projects {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  flex-wrap: wrap;
-  width: 100vw;
+  display: grid;
+  grid-gap: var(--gridGap);
   z-index: 1;
 }
 .project {
   background-color: var(--secondary-color);
-  height: 30vh;
+  height: 300px;
+  width: 40vw;
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+.project-description {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  width: 40vw;
+  color: var(--secondary-color);
+  font-size: 20pt;
 }
 .project-text, .icons {
   background-color: var(--secondary-color);
@@ -276,24 +291,65 @@ a:visited {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+#description-project1{
+  grid-row-start: 1;
+  grid-row-end: 2;
 }
 #project2 {
   background-image: url("Images/dcp.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+#description-project2{
+  grid-row-start: 2;
+  grid-row-end: 3;
 }
 #project3 {
   background-image: url("Images/movementProject.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+#description-project3{
+  grid-row-start: 3;
+  grid-row-end: 4;
 }
 #project4 {
   background-image: url("Images/chewyScreenshot.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
+#description-project4{
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
+#project5 {
+  background-image: url("Images/chewyScreenshot.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  grid-row-start: 5;
+  grid-row-end: 6;
+}
+#description-project5{
+  grid-row-start: 5;
+  grid-row-end: 6;
+}
+footer .footer {
+  height: 30vh;
+  position: relative;
+  bottom: 0;
 }
 .navTop {
   position: fixed;

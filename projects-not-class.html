@@ -51,7 +51,7 @@
                         </div>
                     </a>
                     <div class="project-description" id="description-project1">
-                        <p>100 word description Project 1</p>
+                        <p></p>
                     </div>
                     <a class="project-link" href="plan.html" target="_blank">
                         <div class="project" id="project2" role="img" title="Screenshot of project 2 which is Degree Completion Plan for Towson University.">
@@ -66,9 +66,6 @@
                             </div>
                         </div>
                     </a>
-                    <div class="project-description" id="description-project2">
-                        <p>100 word description Project 2</p>
-                    </div>
                     <a class="project-link" href="trade.html" target="_blank">
                         <div class="project" id="project3" role="img" title="Screenshot of project 3 which is a webpage where climbers can post a profile to meet other climbers with similar interests.">
                             <div class="project-text">
@@ -82,9 +79,6 @@
                             </div>
                         </div>
                     </a>
-                    <div class="project-description" id="description-project3">
-                        <p>100 word description Project 3</p>
-                    </div>
                     <a class="project-link" href="chewy.html" target="_blank">
                         <div class="project" id="project4" role="img" title="Screenshot of project 4 which is a copy of the chewy.com homepage.">
                             <div class="project-text">
@@ -98,9 +92,6 @@
                             </div>
                         </div>
                     </a>
-                    <div class="project-description" id="description-project4">
-                        <p>100 word description Project 4</p>
-                    </div>
                     <a class="project-link" href="chewy.html" target="_blank">
                         <div class="project" id="project5" role="img" title="Screenshot of project 4 which is a copy of the chewy.com homepage.">
                             <div class="project-text">
@@ -114,9 +105,6 @@
                             </div>
                         </div>
                     </a>
-                    <div class="project-description" id="description-project5">
-                        <p>100 word description Project 5</p>
-                    </div>
                 </div>
             </div>
         </div>
@@ -136,3 +124,89 @@
     </div>
 </body>
 </html>
+
+#view-projects {
+    background-color: var(--primary-color);
+    z-index: 2;
+    margin: 0;
+    padding: 0;
+  }
+  #animation-content-projects{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #projects-main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: space-evenly;
+  }
+  #projects-title {
+    color: var(--secondary-color);
+    opacity: var(--opacity);
+    font-size: 50pt;
+    width: 100vw;
+  }
+  .projects {
+    display: flex;
+    /*background-color: var(--primary-color);*/
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100vw;
+    z-index: 1;
+  }
+  .project {
+    background-color: var(--secondary-color);
+    height: 300px;
+    width: 500px;
+  }
+  .project-text, .icons {
+    background-color: var(--secondary-color);
+    opacity: 95%;
+    padding: 3pt;
+    font-size: 20pt;
+    text-align: center;
+    font-weight: bold;
+  }
+  .project-link, .project-link:visited {
+    text-decoration: none;
+    color: var(--primary-color);
+  }
+  #project1 {
+    background-image: url("Images/appleScreenshot.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  #project2 {
+    background-image: url("Images/dcp.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  #project3 {
+    background-image: url("Images/movementProject.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  #project4 {
+    background-image: url("Images/chewyScreenshot.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  #project5 {
+    background-image: url("Images/chewyScreenshot.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  footer .footer {
+    height: 30vh;
+    position: relative;
+    bottom: 0;
+  }
