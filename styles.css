@@ -254,6 +254,7 @@ a:visited {
   opacity: var(--opacity);
   font-size: 50pt;
   width: 100vw;
+  margin-left: 40px;
 }
 .projects {
   display: grid;
