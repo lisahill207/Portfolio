@@ -1194,12 +1194,20 @@ footer .footer {
   #projects-title{
     align-self: center;
     width: 90vw;
-    height: 25vh;
     font-size: 8vw;
     text-align: center;
   }
+  .projects{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
   .project{
-    width: 40vw;
+    width: 85vw;
     margin: 7px;
+  }
+  .project-description{
+    width: 85vw;
   }
 }
