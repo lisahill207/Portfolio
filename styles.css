@@ -92,7 +92,7 @@ a:visited {
   padding: 0;
 }
 .animation-box {
-  position: relative;
+  position: absolute;
   bottom: 0;
 }
 .animation-dots {
@@ -354,6 +354,9 @@ footer .footer {
   position: relative;
   margin: 0;
   padding: 0;
+}
+#animation-box-projects{
+  position: relative;
 }
 .navTop {
   position: fixed;
