@@ -348,6 +348,18 @@ a:visited {
   grid-row-start: 5;
   grid-row-end: 6;
 }
+#project6 {
+  background-image: url("Images/pierogiScreenshot.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  grid-row-start: 6;
+  grid-row-end: 7;
+}
+#description-project6{
+  grid-row-start: 6;
+  grid-row-end: 7;
+}
 footer .footer {
   height: 30vh;
   position: absolute;
