@@ -1,0 +1,69 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: black;
+    width: 100vw;
+}
+.bookshelf-header{
+    background-image: url("images/bookshelf.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 35vh;
+}
+.bookshelf-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.bookshelf-search input{
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    color: #555;
+    padding: 10px;
+    height: 40px;
+    border-radius: 30px;
+    flex: 1;
+    margin: 16px;
+    font-size: 18px;
+}
+.bookshelf-search button{
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+.bookshelf-search button i{
+    width: 16px;
+}
+.bookshelf-results{
+    width: 70vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.bookshelf-book{
+    width: 15vw;
+    aspect-ratio: 1 / 1.24;
+    outline: solid red;
+    margin: 5px;
+}
+.bookshelf-book p{
+    font-size: 20pt;
+    text-align: center;
+}
+.bookshelf-cover{
+    width: 15vw;
+    aspect-ratio: 1 / 1;
+    background-color: antiquewhite;
+}
