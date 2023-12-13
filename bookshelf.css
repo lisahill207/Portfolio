@@ -45,6 +45,9 @@ body{
 .bookshelf-search button i{
     width: 16px;
 }
+.bookshelf-error{
+    display: none;
+}
 .bookshelf-results{
     width: 70vw;
     display: flex;
