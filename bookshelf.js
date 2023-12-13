@@ -10,8 +10,11 @@ const apiKey= "AIzaSyA_wV2ReAmlc9wdMP1nNqkcu9hefIR0wLo";
             }
             else{
                 var data = await response.json();
-                document.querySelector(".bookshelf-title").innerHTML = data.items[0].volumeInfo.title;
-                document.querySelector(".bookshelf-error").style.display = "none";
+                for(i=0; i<data.items.length; i++){
+                    document.querySelector(".bookshelf-title").innerHTML = data.items[i].volumeInfo.title;
+                    document.querySelector(".bookshelf-cover").src = data.items[i].volumeInfo.imageLinks.smallThumbnail;
+                    document.querySelector(".bookshelf-error").style.display = "none";
+                }
             }}
 
             searchBtn.addEventListener("click", ()=>{
