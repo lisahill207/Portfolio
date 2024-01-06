@@ -1,5 +1,5 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/fys98sn9wrre/public_html
-    - /bin/cp -R Portfolio $DEPLOYPATH
+    - export DEPLOYPATH=/home/fys98sn9wrre/public_html/
+    - /bin/cp -R Portfolio $DEPLOYPATH/
