@@ -247,6 +247,7 @@ a:visited {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100vw;
 }
 #projects-title {
   color: var(--secondary-color);
@@ -255,26 +256,19 @@ a:visited {
   width: 100vw;
   margin-left: 40px;
 }
-.projects {
-  display: grid;
-  grid-gap: var(--gridGap);
-  z-index: 1;
-  padding: 20px;
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 2;
+}
+.project-container {
+  padding-bottom: 3vh;
 }
 .project {
-  background-color: var(--secondary-color);
-  height: 300px;
-  width: 40vw;
-  grid-column-start: 1;
-  grid-column-end: 2;
-}
-.project-description {
-  grid-column-start: 2;
-  grid-column-end: 3;
-  width: 40vw;
-  color: var(--secondary-color);
-  font-size: 15pt;
-  text-align: center;
+  aspect-ratio: 1/1;
+  width: 35vw;
 }
 .project-text,
 .icons {
@@ -295,72 +289,36 @@ a:visited {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  grid-row-start: 1;
-  grid-row-end: 2;
-}
-#description-project1 {
-  grid-row-start: 1;
-  grid-row-end: 2;
 }
 #project2 {
   background-image: url("Images/dcp.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  grid-row-start: 2;
-  grid-row-end: 3;
-}
-#description-project2 {
-  grid-row-start: 2;
-  grid-row-end: 3;
 }
 #project3 {
   background-image: url("Images/movementProject.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  grid-row-start: 3;
-  grid-row-end: 4;
-}
-#description-project3 {
-  grid-row-start: 3;
-  grid-row-end: 4;
 }
 #project4 {
   background-image: url("Images/chewyScreenshot.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  grid-row-start: 4;
-  grid-row-end: 5;
-}
-#description-project4 {
-  grid-row-start: 4;
-  grid-row-end: 5;
 }
 #project5 {
   background-image: url("Images/weatherScreenshot.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  grid-row-start: 5;
-  grid-row-end: 6;
-}
-#description-project5 {
-  grid-row-start: 5;
-  grid-row-end: 6;
 }
 #project6 {
   background-image: url("Images/pierogiScreenshot.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  grid-row-start: 6;
-  grid-row-end: 7;
-}
-#description-project6 {
-  grid-row-start: 6;
-  grid-row-end: 7;
 }
 footer .footer {
   height: 30vh;
