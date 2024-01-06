@@ -1,0 +1,221 @@
+:root {
+  --chewyBlue: #1c49c2;
+  --chewyWhite: #ffffff;
+  --chewyYellow: #ffc80f;
+  --chewyLightGrey: #f5f5f5;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+.chewy_navbar {
+  width: 100vw;
+  background-color: #1c49c2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.chewy_top_nav {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  font-size: 15pt;
+  padding: 30px 20px;
+  width: 100vw;
+  color: #ffffff;
+}
+.chewy_top_nav_left {
+  display: flex;
+  justify-content: space-around;
+  width: 60vw;
+}
+.chewy_top_nav_right {
+  display: flex;
+  justify-content: space-around;
+  width: 40vw;
+}
+.chewy_logo {
+  background-image: url("Images/chewyLogo.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 200px;
+  padding: 15px;
+}
+#chewy_search {
+  width: 45vw;
+  height: 40px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  border: none;
+}
+.chewy_bottom_nav {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  color: #fff;
+  width: 100vw;
+  padding: 20px 0px;
+  font-size: 14pt;
+}
+#chewy_shop {
+  font-weight: bold;
+  font-size: 15pt;
+}
+#chewy_delivery {
+  color: #ffc80f;
+  font-size: 12pt;
+}
+.chewy_ad {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background-color: #ffffff;
+}
+.chewy_ad_item {
+  padding: 5px;
+  font-weight: bold;
+}
+.chewy_body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.chewy_top_slider {
+  background-image: url("Images/chewyAutoship.avif");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 300px;
+}
+.chewy_slider_navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100vw;
+  background-color: #f5f5f5;
+  padding: 20px;
+}
+.chewy_slider_navbar_section i {
+  font-size: 20pt;
+  padding: 15px;
+}
+#chewy_slider_navbar_section2,
+#chewy_slider_navbar_section3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.chewy_section_top {
+  font-weight: bold;
+}
+#chewy_line1 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100vw;
+  height: 40vh;
+}
+.chewy_line1_box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 25vw;
+}
+.chewy_line1_box_image {
+  width: 22vw;
+}
+.chewy_line1_box_text {
+  font-weight: bold;
+  padding-top: 15px;
+}
+#chewy_line2 {
+  width: 90vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.chewy_line2_title {
+  align-self: flex-start;
+  font-size: 15pt;
+  font-weight: bold;
+  padding: 10px;
+}
+.chewy_line2_boxes {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100vw;
+}
+.chewy_line2_image {
+  width: 47vw;
+}
+#chewy_line2_left,
+#chewy_line2_right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.chewy_line2_text {
+  font-weight: bold;
+  padding: 10px;
+}
+.chewy_footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+.chewy_footer_area {
+  width: 100vw;
+}
+#chewy_footer_area1 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #1c49c2;
+  color: #ffffff;
+  font-weight: bold;
+  padding: 20px;
+  font-size: 15pt;
+}
+.chewy_footer_area1_section {
+  display: flex;
+}
+.chewy_footer_area1_section i {
+  padding-right: 10px;
+}
+#chewy_top {
+  background-color: #ffffff;
+  color: #1c49c2;
+  text-decoration: none;
+  padding: 12px 45px;
+  border-radius: 45px;
+}
+#chewy_top:visited {
+  text-decoration: none;
+}
+#chewy_footer_area2 {
+  padding: 30px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.chewy_footer_area2_section {
+  display: inline;
+  padding: 20px;
+}
+.chewy_footer_area2_socials i {
+  font-size: 25pt;
+  padding: 10px;
+}
