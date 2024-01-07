@@ -79,7 +79,7 @@ a:visited {
 }
 .animation-box {
   position: absolute;
-  bottom: 0;
+  top: 0;
 }
 .animation-dots {
   position: absolute;
@@ -91,7 +91,7 @@ a:visited {
   left: 5vw;
   animation: animate 20s linear infinite;
   z-index: 1;
-  bottom: 0;
+  top: 0;
 }
 .dot2 {
   left: 37vw;
@@ -117,17 +117,17 @@ a:visited {
   0% {
     transform: scale(0);
     opacity: 0;
-    bottom: 2vh;
+    top: 0vh;
   }
   1% {
     transform: scale(0);
     opacity: 1;
-    bottom: 10vh;
+    top: 1vh;
   }
   100% {
     transform: scale(10);
     opacity: 0;
-    bottom: 100vh;
+    top: 100vh;
   }
 }
 .header {
@@ -298,9 +298,6 @@ footer .footer {
   position: absolute;
   margin: 0;
   padding: 0;
-}
-#animation-box-projects {
-  position: relative;
 }
 @media only screen and (max-width: 600px) {
   .navbar {
