@@ -21,18 +21,14 @@ async function checkBookshelf(search) {
   } else {
     cleanUp();
     const data = await response.json();
-    console.log(data);
     const noData = data.totalItems;
     if (noData == 0) {
       document.querySelector(".bookshelf-error").style.display = "block";
     } else {
       const items = [data.items];
-      console.log(items);
       const length = items[0].length;
-      console.log(length);
       for (let i = 0; i < length; i++) {
         const newBook = document.createElement("div");
-        console.log("div added");
         newBook.classList.add("bookshelf-book");
         newBook.setAttribute("id", `bookshelf-book${i}`);
         document.querySelector(".bookshelf-results").appendChild(newBook);

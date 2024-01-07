@@ -53,19 +53,26 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  align-items: center;
+  align-items: start;
 }
 .bookshelf-book {
-  width: 15vw;
+  width: 20vw;
+  border: solid red;
   margin: 10px 5px;
 }
 .bookshelf-book p {
   font-size: 16pt;
   text-align: center;
-  height: 150px;
 }
 .bookshelf-cover {
-  width: 15vw;
+  width: 20vw;
   aspect-ratio: 1 / 1;
-  background-color: antiquewhite;
+}
+@media only screen and (max-width: 600px) {
+  .bookshelf-book {
+    width: 60vw;
+  }
+  .bookshelf-cover {
+    width: 60vw;
+  }
 }
