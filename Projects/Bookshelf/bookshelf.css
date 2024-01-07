@@ -26,7 +26,7 @@ body {
   outline: 0;
   background: #ebfffc;
   color: #555;
-  padding: 10px;
+  padding: 20px;
   height: 40px;
   border-radius: 30px;
   flex: 1;
@@ -49,7 +49,7 @@ body {
   display: none;
 }
 .bookshelf-results {
-  width: 70vw;
+  width: 80vw;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -57,13 +57,12 @@ body {
 }
 .bookshelf-book {
   width: 15vw;
-  aspect-ratio: 1 / 1.24;
-  outline: solid red;
-  margin: 5px;
+  margin: 10px 5px;
 }
 .bookshelf-book p {
-  font-size: 20pt;
+  font-size: 16pt;
   text-align: center;
+  height: 150px;
 }
 .bookshelf-cover {
   width: 15vw;
