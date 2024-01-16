@@ -57,7 +57,6 @@ body {
 }
 .bookshelf-book {
   width: 20vw;
-  border: solid red;
   margin: 10px 5px;
 }
 .bookshelf-book p {
