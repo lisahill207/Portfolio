@@ -281,44 +281,46 @@
                   aria-required="false"
                 />
               </div>
-              <div class="oneClass">
-                <label for="className_semester1_class1">Class Name:</label>
-                <input
-                  type="text"
-                  id="className_semester1_class1"
-                  name="className_semester1_class1"
-                  placeholder="ENGL 102"
-                  required
-                  aria-required="false"
-                />
-                <label for="credits_semester1_class1">Credits</label>
-                <input
-                  type="text"
-                  id="credits_semester1_class1"
-                  name="credits_semester1_class1"
-                  placeholder="3"
-                  required
-                  aria-required="false"
-                />
-                <label for="status_semester1_class1">Status</label>
-                <select
-                  id="status_semester1_class1"
-                  name="status_semester1_class1"
-                  required
-                  aria-required="true"
-                >
-                  <option value="" disabled selected hidden>
-                    Choose One...
-                  </option>
-                  <option value="inProgress">In Progress</option>
-                  <option value="upcoming">Upcoming</option>
-                </select>
+              <div id="semesterOneClasses">
+                <div id="semesterOneOneClass">
+                  <label for="className_semester1_class1">Class Name:</label>
+                  <input
+                    type="text"
+                    id="className_semester1_class1"
+                    name="className_semester1_class1"
+                    placeholder="ENGL 102"
+                    required
+                    aria-required="false"
+                  />
+                  <label for="credits_semester1_class1">Credits</label>
+                  <input
+                    type="text"
+                    id="credits_semester1_class1"
+                    name="credits_semester1_class1"
+                    placeholder="3"
+                    required
+                    aria-required="false"
+                  />
+                  <label for="status_semester1_class1">Status</label>
+                  <select
+                    id="status_semester1_class1"
+                    name="status_semester1_class1"
+                    required
+                    aria-required="true"
+                  >
+                    <option value="" disabled selected hidden>
+                      Choose One...
+                    </option>
+                    <option value="inProgress">In Progress</option>
+                    <option value="upcoming">Upcoming</option>
+                  </select>
+                </div>
               </div>
-              <button>Add Class</button>
+              <button id="addClass">Add Class</button>
             </fieldset>
           </div>
-          <button>Add Semester</button>
-          <button>Submit</button>
+          <button id="addSemester">Add Semester</button>
+          <button id="submit">Submit</button>
         </fieldset>
       </form>
     </div>
