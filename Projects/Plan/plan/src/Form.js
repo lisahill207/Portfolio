@@ -1,7 +1,7 @@
 import FormTop from "./FormTop.js";
 import FormBottom from "./FormBottom";
 
-const Form = () => {
+function Form() {
   return (
     <form
       action="mailto:lisahill207@gmail.com"
@@ -12,6 +12,6 @@ const Form = () => {
       <FormBottom />
     </form>
   );
-};
+}
 
 export default Form;

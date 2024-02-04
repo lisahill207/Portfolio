@@ -1,8 +1,14 @@
-const FormButtons = () => {
-  const semesterClick = () => {
+import React, { useState } from "react";
+
+function FormButtons() {
+  const [input, setInput] = useState("");
+
+  const semesterClick = (e) => {
+    e.preventDefault();
     console.log("Add a semester");
   };
-  const submitClick = () => {
+  const submitClick = (e) => {
+    e.preventDefault();
     console.log("Submit the form");
   };
   return (
@@ -15,5 +21,5 @@ const FormButtons = () => {
       </button>
     </section>
   );
-};
+}
 export default FormButtons;

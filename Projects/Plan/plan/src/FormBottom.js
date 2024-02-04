@@ -1,4 +1,4 @@
-const SemesterInfo = () => {
+function SemesterInfo() {
   return (
     <section>
       <div className="semesterInfo">
@@ -27,9 +27,9 @@ const SemesterInfo = () => {
       </div>
     </section>
   );
-};
+}
 
-const OneClass = () => {
+function OneClass() {
   return (
     <section>
       <div id="semesterOneClasses">
@@ -76,12 +76,13 @@ const OneClass = () => {
       </div>
     </section>
   );
-};
-const ClassButton = () => {
-  return <button id="addClass">Add Class</button>;
-};
+}
 
-const OneSemester = () => {
+function ClassButton() {
+  return <button id="addClass">Add Class</button>;
+}
+
+function OneSemester() {
   return (
     <fieldset className="semester" id="semester1">
       <legend>Semester 1</legend>
@@ -90,13 +91,13 @@ const OneSemester = () => {
       <ClassButton />
     </fieldset>
   );
-};
+}
 
-const FormBottom = () => {
+function FormBottom() {
   return (
     <fieldset className="allSemesters">
       <OneSemester />
     </fieldset>
   );
-};
+}
 export default FormBottom;

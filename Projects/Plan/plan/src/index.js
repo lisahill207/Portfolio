@@ -10,7 +10,7 @@ import Footer from "./footer.js";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-const DCP = () => {
+function DCP() {
   return (
     <section>
       <PlanHeaders />
@@ -19,6 +19,6 @@ const DCP = () => {
       <Footer />
     </section>
   );
-};
+}
 
 root.render(<DCP />);

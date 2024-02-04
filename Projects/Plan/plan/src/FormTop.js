@@ -1,4 +1,4 @@
-const StudentInfo = () => {
+function StudentInfo() {
   return (
     <div className="studentInfo">
       <label defaultValue="" htmlFor="studentName">
@@ -25,9 +25,9 @@ const StudentInfo = () => {
       />
     </div>
   );
-};
+}
 
-const AdvisorInfo = () => {
+function AdvisorInfo() {
   return (
     <div className="advisorInfo">
       <label htmlFor="advisorName">Advisor's Name</label>
@@ -50,9 +50,9 @@ const AdvisorInfo = () => {
       />
     </div>
   );
-};
+}
 
-const MajorInfo = () => {
+function MajorInfo() {
   return (
     <div className="majorInfo">
       <label htmlFor="major">Major</label>
@@ -143,9 +143,9 @@ const MajorInfo = () => {
       </select>
     </div>
   );
-};
+}
 
-const FormTop = () => {
+function FormTop() {
   return (
     <div className="topInfo">
       <StudentInfo />
@@ -153,5 +153,5 @@ const FormTop = () => {
       <MajorInfo />
     </div>
   );
-};
+}
 export default FormTop;
