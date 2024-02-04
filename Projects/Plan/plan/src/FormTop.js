@@ -1,7 +1,9 @@
 const StudentInfo = () => {
   return (
     <div className="studentInfo">
-      <label for="studentName">Student Name</label>
+      <label defaultValue="" htmlFor="studentName">
+        Student Name
+      </label>
       <input
         type="text"
         required
@@ -10,7 +12,9 @@ const StudentInfo = () => {
         placeholder="First Last"
         aria-required="true"
       />
-      <label for="studentEmail">Student TU Email</label>
+      <label defaultValue="" htmlFor="studentEmail">
+        Student TU Email
+      </label>
       <input
         type="email"
         id="studentEmail"
@@ -26,7 +30,7 @@ const StudentInfo = () => {
 const AdvisorInfo = () => {
   return (
     <div className="advisorInfo">
-      <label for="advisorName">Advisor's Name</label>
+      <label htmlFor="advisorName">Advisor's Name</label>
       <input
         type="text"
         id="advisorName"
@@ -35,7 +39,7 @@ const AdvisorInfo = () => {
         required
         aria-required="true"
       />
-      <label for="advisorEmail">Advisor TU Email</label>
+      <label htmlFor="advisorEmail">Advisor TU Email</label>
       <input
         type="email"
         id="advisorEmail"
@@ -51,9 +55,15 @@ const AdvisorInfo = () => {
 const MajorInfo = () => {
   return (
     <div className="majorInfo">
-      <label for="major">Major</label>
-      <select id="major" name="major" required aria-required="true">
-        <option value="" disabled selected hidden>
+      <label htmlFor="major">Major</label>
+      <select
+        defaultValue=""
+        id="major"
+        name="major"
+        required
+        aria-required="true"
+      >
+        <option value="" disabled>
           Select a major...
         </option>
         <option value="accounting">Accounting</option>

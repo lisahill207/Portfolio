@@ -2,7 +2,7 @@ const SemesterInfo = () => {
   return (
     <section>
       <div className="semesterInfo">
-        <label for="semester_semester1">
+        <label htmlFor="semester_semester1">
           Semester
           <input
             type="text"
@@ -13,7 +13,7 @@ const SemesterInfo = () => {
             aria-required="false"
           />
         </label>
-        <label for="year_semester1">
+        <label htmlFor="year_semester1">
           Year
           <input
             type="text"
@@ -34,7 +34,7 @@ const OneClass = () => {
     <section>
       <div id="semesterOneClasses">
         <div className="oneClass">
-          <label for="className_semester1_class1">
+          <label htmlFor="className_semester1_class1">
             Class Name:
             <input
               type="text"
@@ -45,7 +45,7 @@ const OneClass = () => {
               aria-required="false"
             />
           </label>
-          <label for="credits_semester1_class1">
+          <label htmlFor="credits_semester1_class1">
             Credits
             <input
               type="text"
@@ -56,19 +56,20 @@ const OneClass = () => {
               aria-required="false"
             />
           </label>
-          <label for="status_semester1_class1">
+          <label htmlFor="status_semester1_class1">
             Status
             <select
+              defaultValue=""
               id="status_semester1_class1"
               name="status_semester1_class1"
               required
               aria-required="true"
             >
-              <option value="" disabled selected hidden>
+              <option defaultValue="" disabled>
                 Choose One...
               </option>
-              <option value="inProgress">In Progress</option>
-              <option value="upcoming">Upcoming</option>
+              <option defaultValue="inProgress">In Progress</option>
+              <option defaultValue="upcoming">Upcoming</option>
             </select>
           </label>
         </div>
@@ -91,31 +92,11 @@ const OneSemester = () => {
   );
 };
 
-const AllSemesters = () => {
+const FormBottom = () => {
   return (
     <fieldset className="allSemesters">
       <OneSemester />
     </fieldset>
-  );
-};
-const BottomButtons = () => {
-  return (
-    <section className="bottomButtons">
-      <button className="bottomButton" id="addSemester">
-        Add Semester
-      </button>
-      <button className="bottomButton" id="submit">
-        Submit
-      </button>
-    </section>
-  );
-};
-const FormBottom = () => {
-  return (
-    <section>
-      <AllSemesters />
-      <BottomButtons />
-    </section>
   );
 };
 export default FormBottom;
