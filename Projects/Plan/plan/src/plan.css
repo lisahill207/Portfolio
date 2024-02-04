@@ -7,7 +7,6 @@ body {
   font-weight: 300;
   font-style: normal;
   width: 100vw;
-  height: 100vh;
   margin: 0;
   padding: 0;
 }
@@ -25,11 +24,19 @@ body {
 .fa-caret-down,
 .fa-heart,
 .fa-calendar,
-.fa-laptop {
+.fa-laptop,
+.fa-phone,
+.fa-square,
+.fa-language {
   color: var(--tuGold);
   padding: 0px 5px;
 }
-.fa-magnifying-glass {
+.fa-magnifying-glass,
+.fa-facebook,
+.fa-twitter,
+.fa-instagram,
+.fa-youtube,
+.fa-linkedin {
   color: #ffffff;
   padding: 0px 5px;
 }
@@ -131,13 +138,37 @@ body {
 fieldset {
   margin: 10px 25px;
 }
-label,
-button {
+.allSemesters {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.semester {
+  max-width: 45vw;
+}
+.semesterInfo {
+  display: flex;
+  justify-content: space-evenly;
+}
+input,
+select {
+  margin: 2px 5px;
+}
+#addClass {
   margin: 4px 0px;
+}
+.bottomButtons {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+button {
+  padding: 5px 5px;
+  margin: 0px 10px;
 }
 .tuFooter {
   display: grid;
-  max-width: 100vw;
+  width: 100vw;
   background-color: black;
   color: white;
   padding-top: 25px;
@@ -145,6 +176,7 @@ button {
   font-size: 15pt;
   font-weight: 500;
 }
+
 .tuFooterLeft {
   grid-column-start: 1;
   grid-column-end: 2;

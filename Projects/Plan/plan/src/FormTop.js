@@ -1,6 +1,6 @@
 const StudentInfo = () => {
   return (
-    <form className="studentInfo">
+    <div className="studentInfo">
       <label for="studentName">Student Name</label>
       <input
         type="text"
@@ -19,7 +19,7 @@ const StudentInfo = () => {
         required
         aria-required="true"
       />
-    </form>
+    </div>
   );
 };
 
