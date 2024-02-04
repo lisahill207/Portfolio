@@ -3,8 +3,18 @@ import ReactDOM from "react-dom/client";
 
 import "./plan.css";
 
-import TUheader from "./TUheader";
+import PlanHeaders from "./PlanHeaders.js";
+import FormTop from "./FormTop.js";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-root.render(<TUheader />);
+const Plan = () => {
+  return (
+    <section>
+      <PlanHeaders />
+      <FormTop />
+    </section>
+  );
+};
+
+root.render(<Plan />);

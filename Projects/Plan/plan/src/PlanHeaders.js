@@ -8,7 +8,7 @@ import { faCalendar } from "@fortawesome/free-solid-svg-icons";
 import { faLaptop } from "@fortawesome/free-solid-svg-icons";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 
-function TUheader() {
+const TUheader = () => {
   return (
     <div className="tuNavBars">
       <div className="upperNavBar">
@@ -81,6 +81,22 @@ function TUheader() {
       </div>
     </div>
   );
-}
+};
 
-export default TUheader;
+const PlanTitle = () => {
+  return (
+    <div className="planTitle">
+      <h1>Degree Completion Plan</h1>
+    </div>
+  );
+};
+
+function PlanHeaders() {
+  return (
+    <section>
+      <TUheader />
+      <PlanTitle />
+    </section>
+  );
+}
+export default PlanHeaders;
