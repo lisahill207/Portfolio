@@ -1,7 +1,7 @@
 import FormTop from "./FormTop.js";
-import FormBottom from "./FormBottom";
+import FormBottom from "./FormBottom.js";
 
-function Form() {
+function Form({ semesters }) {
   return (
     <form
       action="mailto:lisahill207@gmail.com"
@@ -9,7 +9,7 @@ function Form() {
       encType="text/plain"
     >
       <FormTop />
-      <FormBottom />
+      <FormBottom semesters={semesters} />
     </form>
   );
 }
