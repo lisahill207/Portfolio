@@ -1,11 +1,10 @@
 import OneSemester from "./OneSemester.js";
 
-function FormBottom({ semesters }) {
+function FormBottom({ semesters, semesterId, classes, classesId }) {
   return (
     <fieldset className="allSemesters">
-      {semesters.length === 0 && "No Semesters"}
       {semesters.map((semester) => {
-        return <OneSemester {...semesters} />;
+        return <OneSemester semesters={semesters} semestersId={semesters.id} />;
       })}
     </fieldset>
   );
