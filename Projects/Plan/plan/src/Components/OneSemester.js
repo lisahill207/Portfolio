@@ -1,12 +1,7 @@
 import Classes from "./Classes";
 import SemesterInfo from "./SemesterInfo";
 
-export default function OneSemester({
-  id,
-  deleteSemester,
-  classes,
-  classesId,
-}) {
+export default function OneSemester({ id, deleteSemester }) {
   return (
     <fieldset className="semester">
       <SemesterInfo />

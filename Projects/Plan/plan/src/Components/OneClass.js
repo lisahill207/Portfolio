@@ -1,4 +1,7 @@
-export default function OneClass({ courses, coursesId }) {
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faTrash } from "@fortawesome/free-solid-svg-icons";
+
+export default function OneClass({ id, deleteCourse }) {
   return (
     <section>
       <div>
@@ -25,22 +28,9 @@ export default function OneClass({ courses, coursesId }) {
               aria-required="false"
             />
           </label>
-          <label htmlFor="status_semester1_class1">
-            Status
-            <select
-              defaultValue=""
-              id="status_semester1_class1"
-              name="status_semester1_class1"
-              required
-              aria-required="true"
-            >
-              <option defaultValue="" disabled>
-                Choose One...
-              </option>
-              <option defaultValue="inProgress">In Progress</option>
-              <option defaultValue="upcoming">Upcoming</option>
-            </select>
-          </label>
+          <button onClick={() => deleteCourse(id)}>
+            <FontAwesomeIcon icon={faTrash} />
+          </button>
         </div>
       </div>
     </section>

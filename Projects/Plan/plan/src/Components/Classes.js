@@ -1,13 +1,28 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import OneClass from "./OneClass.js";
 import DeleteButton from "./DeleteButton.js";
 
 export default function Classes({ deleteSemester, id }) {
-  const [courses, setCourses] = useState([<OneClass />]);
+  const [courses, setCourses] = useState(() => {
+    const localValue = localStorage.getItem("ITEMS");
+    if (localValue == null) return [<OneClass />];
+
+    return JSON.parse(localValue);
+  });
+
+  useEffect(() => {
+    localStorage.setItem("ITEMS", JSON.stringify(courses));
+  }, [courses]);
 
   function addClass() {
     setCourses((currentCourses) => {
       return [...currentCourses, { id: crypto.randomUUID() }];
+    });
+  }
+
+  function deleteCourse(id) {
+    setCourses((currentCourses) => {
+      return currentCourses.filter((course) => course.id !== id);
     });
   }
 
@@ -28,7 +43,9 @@ export default function Classes({ deleteSemester, id }) {
       {courses
         .filter((item, idx) => idx < 10)
         .map((course) => {
-          return <OneClass courses={courses} coursesId={courses.id} />;
+          return (
+            <OneClass deleteCourse={deleteCourse} {...course} key={course.id} />
+          );
         })}
       <ClassButton />
       <DeleteButton deleteSemester={deleteSemester} id={id} />

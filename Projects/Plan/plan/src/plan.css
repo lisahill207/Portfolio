@@ -140,15 +140,22 @@ fieldset {
 }
 .allSemesters {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
   align-items: center;
 }
 .semester {
-  max-width: 45vw;
+  max-width: 40vw;
 }
 .semesterInfo {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
+}
+.oneClass {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 input,
 select {
@@ -222,34 +229,4 @@ button {
 }
 .tuFooterCenter ul {
   list-style-type: none;
-}
-.semesters {
-  display: grid;
-}
-.semester {
-  max-width: 45vw;
-}
-#semester1 {
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 1;
-  grid-row-end: 2;
-}
-#semester2 {
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 1;
-  grid-row-end: 2;
-}
-#semester3 {
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 2;
-  grid-row-end: 3;
-}
-#semester4 {
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 2;
-  grid-row-end: 3;
 }

@@ -1,12 +1,6 @@
 import OneSemester from "./OneSemester.js";
-import { useId } from "react";
 
-export default function FormBottom({
-  deleteSemester,
-  semesters,
-  classes,
-  classesId,
-}) {
+export default function FormBottom({ deleteSemester, semesters }) {
   return (
     <fieldset className="allSemesters">
       {semesters.map((semester) => {
