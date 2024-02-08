@@ -1,5 +1,5 @@
 import React from "react";
-import tulogo from "./Images/tulogo.png";
+import tulogo from "../Images/tulogo.png";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCaretDown } from "@fortawesome/free-solid-svg-icons";
@@ -91,7 +91,7 @@ function PlanTitle() {
   );
 }
 
-function PlanHeaders() {
+export default function PlanHeaders() {
   return (
     <section>
       <TUheader />
@@ -99,4 +99,3 @@ function PlanHeaders() {
     </section>
   );
 }
-export default PlanHeaders;

@@ -1,57 +1,3 @@
-function StudentInfo() {
-  return (
-    <div className="studentInfo">
-      <label defaultValue="" htmlFor="studentName">
-        Student Name
-      </label>
-      <input
-        type="text"
-        required
-        id="studentName"
-        name="studentName"
-        placeholder="First Last"
-        aria-required="true"
-      />
-      <label defaultValue="" htmlFor="studentEmail">
-        Student TU Email
-      </label>
-      <input
-        type="email"
-        id="studentEmail"
-        name="studentEmail"
-        placeholder="student@students.towson.edu"
-        required
-        aria-required="true"
-      />
-    </div>
-  );
-}
-
-function AdvisorInfo() {
-  return (
-    <div className="advisorInfo">
-      <label htmlFor="advisorName">Advisor's Name</label>
-      <input
-        type="text"
-        id="advisorName"
-        name="advisorName"
-        placeholder="First Last"
-        required
-        aria-required="true"
-      />
-      <label htmlFor="advisorEmail">Advisor TU Email</label>
-      <input
-        type="email"
-        id="advisorEmail"
-        name="advisorEmail"
-        placeholder="advisor@towson.edu"
-        required
-        aria-required="true"
-      />
-    </div>
-  );
-}
-
 function MajorInfo() {
   return (
     <div className="majorInfo">
@@ -144,14 +90,4 @@ function MajorInfo() {
     </div>
   );
 }
-
-function FormTop() {
-  return (
-    <div className="topInfo">
-      <StudentInfo />
-      <AdvisorInfo />
-      <MajorInfo />
-    </div>
-  );
-}
-export default FormTop;
+export default MajorInfo;

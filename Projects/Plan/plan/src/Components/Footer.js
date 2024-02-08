@@ -8,7 +8,7 @@ import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faSquare } from "@fortawesome/free-solid-svg-icons";
 import { faLanguage } from "@fortawesome/free-solid-svg-icons";
 
-const Footer = () => {
+export default function Footer() {
   return (
     <footer className="tuFooter">
       <div className="tuFooterLeft">
@@ -60,5 +60,4 @@ const Footer = () => {
       </p>
     </footer>
   );
-};
-export default Footer;
+}

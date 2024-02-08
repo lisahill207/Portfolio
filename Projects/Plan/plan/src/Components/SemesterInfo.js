@@ -1,8 +1,6 @@
-import Classes from "./Classes";
-
-function SemesterInfo({ semesters, semestersId }) {
+export default function SemesterInfo() {
   return (
-    <section key={semestersId}>
+    <section>
       <div className="semesterInfo">
         <label htmlFor="semester_semester1">
           Semester
@@ -30,13 +28,3 @@ function SemesterInfo({ semesters, semestersId }) {
     </section>
   );
 }
-
-function OneSemester({ semesters, semestersId, classes, classesId }) {
-  return (
-    <fieldset className="semester">
-      <SemesterInfo semesters={semesters} semesterId={semesters.id} />
-      <Classes />
-    </fieldset>
-  );
-}
-export default OneSemester;

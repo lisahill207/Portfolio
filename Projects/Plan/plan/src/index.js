@@ -3,9 +3,9 @@ import ReactDOM from "react-dom/client";
 
 import "./plan.css";
 
-import PlanHeaders from "./PlanHeaders.js";
-import Form from "./Form.js";
-import Footer from "./footer.js";
+import PlanHeaders from "./Components/PlanHeaders.js";
+import Form from "./Components/Form.js";
+import Footer from "./Components/Footer.js";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 

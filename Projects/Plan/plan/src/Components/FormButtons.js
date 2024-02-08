@@ -1,8 +1,9 @@
-function FormButtons({ addSemester, generatePdf }) {
+export default function FormButtons({ addSemester, generatePdf }) {
   function semesterClick(e) {
     e.preventDefault();
     addSemester();
   }
+
   function submitClick(e) {
     e.preventDefault();
     generatePdf();
@@ -18,4 +19,3 @@ function FormButtons({ addSemester, generatePdf }) {
     </section>
   );
 }
-export default FormButtons;
