@@ -7,8 +7,7 @@ function AdvisorInfo() {
         id="advisorName"
         name="advisorName"
         placeholder="First Last"
-        required
-        aria-required="true"
+        aria-required="false"
       />
       <label htmlFor="advisorEmail">Advisor TU Email</label>
       <input
@@ -16,8 +15,7 @@ function AdvisorInfo() {
         id="advisorEmail"
         name="advisorEmail"
         placeholder="advisor@towson.edu"
-        required
-        aria-required="true"
+        aria-required="false"
       />
     </div>
   );

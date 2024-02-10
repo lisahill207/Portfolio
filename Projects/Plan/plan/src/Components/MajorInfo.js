@@ -2,13 +2,7 @@ function MajorInfo() {
   return (
     <div className="majorInfo">
       <label htmlFor="major">Major</label>
-      <select
-        defaultValue=""
-        id="major"
-        name="major"
-        required
-        aria-required="true"
-      >
+      <select defaultValue="" id="major" name="major" aria-required="false">
         <option value="" disabled>
           Select a major...
         </option>

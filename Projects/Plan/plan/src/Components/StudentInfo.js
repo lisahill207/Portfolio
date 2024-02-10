@@ -6,11 +6,10 @@ function StudentInfo() {
       </label>
       <input
         type="text"
-        required
         id="studentName"
         name="studentName"
         placeholder="First Last"
-        aria-required="true"
+        aria-required="false"
       />
       <label defaultValue="" htmlFor="studentEmail">
         Student TU Email
@@ -20,8 +19,7 @@ function StudentInfo() {
         id="studentEmail"
         name="studentEmail"
         placeholder="student@students.towson.edu"
-        required
-        aria-required="true"
+        aria-required="false"
       />
     </div>
   );

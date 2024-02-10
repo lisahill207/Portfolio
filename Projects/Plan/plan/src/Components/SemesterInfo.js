@@ -9,7 +9,6 @@ export default function SemesterInfo() {
             id="className_semester1_class1"
             name="className_semester1_class1"
             placeholder="Spring, Summer, or Fall"
-            required
             aria-required="false"
           />
         </label>
@@ -20,7 +19,6 @@ export default function SemesterInfo() {
             id="className_semester1_class1"
             name="className_semester1_class1"
             placeholder="2024"
-            required
             aria-required="false"
           />
         </label>

@@ -117,6 +117,7 @@ body {
   margin-top: 200px;
   text-align: center;
   font-size: 25pt;
+  font-weight: 400;
 }
 .topInfo {
   width: 100vw;
@@ -124,8 +125,9 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   font-size: 15pt;
+  font-weight: 300;
 }
 .studentInfo,
 .advisorInfo,
@@ -173,32 +175,24 @@ button {
   padding: 5px 5px;
   margin: 0px 10px;
 }
+
 .tuFooter {
-  display: grid;
-  width: 100vw;
+  display: flex;
+  flex-direction: column;
   background-color: black;
+  width: 100vw;
   color: white;
   padding-top: 25px;
   padding-bottom: 5px;
   font-size: 15pt;
   font-weight: 500;
 }
+.tuUpperFooter {
+  display: flex;
+  justify-content: space-around;
+}
 
-.tuFooterLeft {
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 1;
-  grid-row-end: 2;
-  margin-left: 10px;
-}
-.tuFooterLeftText {
-  padding-left: 10px;
-}
 .tuFooterCenter {
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 1;
-  grid-row-end: 2;
   display: flex;
   justify-content: space-evenly;
 }
@@ -207,10 +201,6 @@ button {
   line-height: 2;
 }
 .tuFooterRight {
-  grid-column-start: 3;
-  grid-column-end: 4;
-  grid-row-start: 1;
-  grid-row-end: 2;
   margin-right: 10px;
   display: flex;
   flex-direction: column;
@@ -221,10 +211,6 @@ button {
   line-height: normal;
 }
 .usmMessage {
-  grid-column-start: 1;
-  grid-column-end: 4;
-  grid-row-start: 2;
-  grid-row-end: 3;
   text-align: center;
 }
 .tuFooterCenter ul {

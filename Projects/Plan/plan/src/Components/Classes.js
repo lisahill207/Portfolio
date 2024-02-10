@@ -1,54 +1,53 @@
-import { useState, useEffect } from "react";
 import OneClass from "./OneClass.js";
-import DeleteButton from "./DeleteButton.js";
+import { useState } from "react";
 
-export default function Classes({ deleteSemester, id }) {
-  const [courses, setCourses] = useState(() => {
+export default function Classes({ deleteSemester, semesterId }) {
+  const [courses, setCourses] = useState([<OneClass />]);
+  /*) => {
     const localValue = localStorage.getItem("ITEMS");
-    if (localValue == null) return [<OneClass />];
+    if (localValue == null) return [];
 
     return JSON.parse(localValue);
-  });
+  }*/
 
-  useEffect(() => {
-    localStorage.setItem("ITEMS", JSON.stringify(courses));
-  }, [courses]);
+  /*useEffect(() => {
+    localStorage.setItem("ITEMS", JSON.stringify(semesters));
+  }, [semesters]);*/
 
-  function addClass() {
+  function addCourse(e) {
+    e.preventDefault();
     setCourses((currentCourses) => {
       return [...currentCourses, { id: crypto.randomUUID() }];
     });
   }
-
-  function deleteCourse(id) {
+  function deleteCourse(courseId) {
     setCourses((currentCourses) => {
-      return currentCourses.filter((course) => course.id !== id);
+      return currentCourses.filter((course) => course.id !== courseId);
     });
-  }
-
-  function ClassButton() {
-    function classClick(e) {
-      e.preventDefault();
-      addClass();
-    }
-    return (
-      <button onClick={classClick} id="addClass">
-        Add Class
-      </button>
-    );
   }
 
   return (
     <>
-      {courses
-        .filter((item, idx) => idx < 10)
-        .map((course) => {
-          return (
-            <OneClass deleteCourse={deleteCourse} {...course} key={course.id} />
-          );
-        })}
-      <ClassButton />
-      <DeleteButton deleteSemester={deleteSemester} id={id} />
+      {courses.length === 0 && "Click to add a class"}
+      {courses.map((course) => {
+        return (
+          <OneClass
+            {...course}
+            courseId={course.id}
+            key={course.id}
+            deleteCourse={deleteCourse}
+          />
+        );
+      })}
+      <button onClick={addCourse} className="bottomButton">
+        Add Class
+      </button>
+      <button
+        onClick={() => deleteSemester(semesterId)}
+        className="bottomButton"
+      >
+        Delete Semester
+      </button>
     </>
   );
 }
