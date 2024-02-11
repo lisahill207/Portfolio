@@ -2,7 +2,7 @@ import OneSemester from "./OneSemester.js";
 
 export default function FormBottom({ deleteSemester, semesters }) {
   return (
-    <fieldset className="allSemesters">
+    <section className="allSemesters">
       {semesters.length === 0 && "Click to add a semester"}
       {semesters.map((semester) => {
         return (
@@ -15,6 +15,6 @@ export default function FormBottom({ deleteSemester, semesters }) {
           />
         );
       })}
-    </fieldset>
+    </section>
   );
 }

@@ -29,15 +29,17 @@ export default function Classes({ deleteSemester, semesterId }) {
           />
         );
       })}
-      <button onClick={addCourse} className="bottomButton">
-        Add Class
-      </button>
-      <button
-        onClick={() => deleteSemester(semesterId)}
-        className="bottomButton"
-      >
-        Delete Semester
-      </button>
+      <div className="courseButtons">
+        <button onClick={addCourse} className="courseBtn addCourseBtn">
+          Add Class
+        </button>
+        <button
+          onClick={() => deleteSemester(semesterId)}
+          className="courseBtn deleteSemesterBtn"
+        >
+          Delete Semester
+        </button>
+      </div>
     </>
   );
 }

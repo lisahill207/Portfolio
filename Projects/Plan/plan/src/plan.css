@@ -116,8 +116,14 @@ body {
 .planTitle {
   margin-top: 200px;
   text-align: center;
-  font-size: 25pt;
+  font-size: 40pt;
   font-weight: 400;
+}
+button,
+input,
+select {
+  cursor: pointer;
+  border-radius: 5px;
 }
 .topInfo {
   width: 100vw;
@@ -132,13 +138,17 @@ body {
 .studentInfo,
 .advisorInfo,
 .majorInfo {
-  margin: 10px 5px;
+  margin: 10px 10px;
 }
-.topInfo input {
-  margin-right: 10px;
+.topInfo input,
+select {
+  margin: 0px 40px 0px 10px;
+  font-size: 15pt;
 }
+
 fieldset {
-  margin: 10px 25px;
+  margin: 10px 10px;
+  border-radius: 10px;
 }
 .allSemesters {
   display: flex;
@@ -146,33 +156,49 @@ fieldset {
   justify-content: space-around;
   align-items: center;
 }
+button {
+  padding: 8px 8px;
+  font-size: 12pt;
+}
 .semester {
-  max-width: 45vw;
+  font-size: 13pt;
+}
+.semester input {
+  margin: 10px 10px;
+  font-size: 13pt;
+}
+.semesterInfo,
+.oneClass {
+  margin: 10px 10px;
 }
 .semesterInfo {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: flex-start;
 }
 .oneClass {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
 }
-input,
-select {
-  margin: 2px 5px;
+.deleteCourseBtn {
+  background-color: transparent;
+  font-size: 15pt;
+  border: none;
 }
-#addClass {
-  margin: 4px 0px;
+.courseButtons {
+  display: flex;
+  justify-content: flex-start;
+}
+.courseBtn {
+  margin: 5px 10px;
 }
 .bottomButtons {
   display: flex;
   justify-content: center;
-  margin: 10px;
+  margin: 10px 10px;
 }
-button {
-  padding: 5px 5px;
+.bottomButton {
   margin: 0px 10px;
 }
 
