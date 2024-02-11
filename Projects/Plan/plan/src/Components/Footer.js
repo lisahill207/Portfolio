@@ -21,19 +21,15 @@ export default function Footer() {
           </p>
         </div>
         <div className="tuFooterCenter">
-          <div className="tuFooterCenterLeft">
-            <ul className="tuFooterCenterLeftList">
-              <li className="tuFooterCenterLeftItem">Contact Us</li>
-              <li className="tuFooterCenterLeftItem">Directions & Parking</li>
-              <li className="tuFooterCenterLeftItem">Work at TU</li>
-            </ul>
+          <div className="tuFooterCenterLeftList">
+            <p className="tuFooterCenterLeftItem">Contact Us</p>
+            <p className="tuFooterCenterLeftItem">Directions & Parking</p>
+            <p className="tuFooterCenterLeftItem">Work at TU</p>
           </div>
-          <div className="tuFooterCenterRight">
-            <ul className="tuFooterCenterRightList">
-              <li className="tuFooterCenterRightItem">Accessibility</li>
-              <li className="tuFooterCenterRightItem">Privacy</li>
-              <li className="tuFooterCenterRightItem">Clery Report</li>
-            </ul>
+          <div className="tuFooterCenterRightList">
+            <p className="tuFooterCenterRightItem">Accessibility</p>
+            <p className="tuFooterCenterRightItem">Privacy</p>
+            <p className="tuFooterCenterRightItem">Clery Report</p>
           </div>
         </div>
         <div className="tuFooterRight">

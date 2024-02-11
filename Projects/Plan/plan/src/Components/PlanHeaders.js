@@ -1,6 +1,8 @@
 import React from "react";
 import tulogo from "../Images/tulogo.png";
 
+import MobileHeader from "./MobileHeader";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCaretDown } from "@fortawesome/free-solid-svg-icons";
 import { faHeart } from "@fortawesome/free-solid-svg-icons";
@@ -59,13 +61,14 @@ function TUheader() {
       <div className="lowerNavBar">
         <div className="leftGraphics">
           <div className="parent">
-            <div id="parallelogram"></div>
-            <div className="child">
-              <img
-                src={tulogo}
-                className="tuLogo"
-                alt="Logo for Towson University"
-              />
+            <div id="parallelogram">
+              <div className="child">
+                <img
+                  src={tulogo}
+                  className="tuLogo"
+                  alt="Logo for Towson University"
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -94,6 +97,7 @@ function PlanTitle() {
 export default function PlanHeaders() {
   return (
     <section>
+      <MobileHeader />
       <TUheader />
       <PlanTitle />
     </section>
