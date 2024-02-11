@@ -4,16 +4,16 @@ import SemesterInfo from "./SemesterInfo";
 export default function OneSemester({
   semesters,
   semester,
-  id,
+  semesterId,
   deleteSemester,
 }) {
   return (
-    <fieldset className="semester">
-      <SemesterInfo />
+    <fieldset key={semesterId} className="semester">
+      <SemesterInfo {...semester} semesterId={semesterId} />
       <Classes
         deleteSemester={deleteSemester}
         {...semester}
-        semesterId={id}
+        semesterId={semesterId}
         semesters={semesters}
       />
     </fieldset>

@@ -1,23 +1,23 @@
-export default function SemesterInfo() {
+export default function SemesterInfo({ semesterId }) {
   return (
     <section>
       <div className="semesterInfo">
-        <label htmlFor="semester_semester1">
+        <label htmlFor={`semester_semester ${semesterId}`}>
           Semester
           <input
             type="text"
-            id="className_semester1_class1"
-            name="className_semester1_class1"
+            id={`semester_semester ${semesterId}`}
+            name={`semester_semester ${semesterId}`}
             placeholder="Spring, Summer, or Fall"
             aria-required="false"
           />
         </label>
-        <label htmlFor="year_semester1">
+        <label htmlFor={`year_semester_${semesterId}`}>
           Year
           <input
             type="text"
-            id="className_semester1_class1"
-            name="className_semester1_class1"
+            id={`year_semester_${semesterId}`}
+            name={`year_semester_${semesterId}`}
             placeholder="2024"
             aria-required="false"
           />

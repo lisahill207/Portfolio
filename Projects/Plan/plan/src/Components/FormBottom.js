@@ -1,8 +1,6 @@
 import OneSemester from "./OneSemester.js";
 
 export default function FormBottom({ deleteSemester, semesters }) {
-
-
   return (
     <fieldset className="allSemesters">
       {semesters.length === 0 && "Click to add a semester"}
@@ -11,8 +9,9 @@ export default function FormBottom({ deleteSemester, semesters }) {
           <OneSemester
             deleteSemester={deleteSemester}
             {...semester}
-            key={semester.id}
+            semesterId={semester.id}
             semesters={semesters}
+            key={semester.id}
           />
         );
       })}

@@ -3,32 +3,34 @@ import { faTrash } from "@fortawesome/free-solid-svg-icons";
 
 export default function OneClass({ deleteCourse, courseId }) {
   return (
-    <section>
+    <section key={courseId}>
       <div>
         <div className="oneClass">
-          <label htmlFor="className">
+          <label htmlFor={`class_name_for_${courseId}`}>
             Class Name:
             <input
               type="text"
-              name="className"
+              id={`class_name_for_${courseId}`}
+              name={`class_name_for_${courseId}`}
               placeholder="ENGL 102"
               aria-required="false"
             />
           </label>
-          <label htmlFor="credits_semester1_class1">
+          <label htmlFor={`credits_for_${courseId}`}>
             Credits
             <input
               type="text"
-              name="credits_semester1_class1"
+              id={`credits_for_${courseId}`}
+              name={`credits_for_${courseId}`}
               placeholder="3"
               aria-required="false"
             />
           </label>
+          <button onClick={() => deleteCourse(courseId)}>
+            <FontAwesomeIcon icon={faTrash} />
+          </button>
         </div>
       </div>
-      <button onClick={() => deleteCourse(courseId)}>
-        <FontAwesomeIcon icon={faTrash} />
-      </button>
     </section>
   );
 }

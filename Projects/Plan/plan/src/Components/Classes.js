@@ -2,17 +2,7 @@ import OneClass from "./OneClass.js";
 import { useState } from "react";
 
 export default function Classes({ deleteSemester, semesterId }) {
-  const [courses, setCourses] = useState([<OneClass />]);
-  /*) => {
-    const localValue = localStorage.getItem("ITEMS");
-    if (localValue == null) return [];
-
-    return JSON.parse(localValue);
-  }*/
-
-  /*useEffect(() => {
-    localStorage.setItem("ITEMS", JSON.stringify(semesters));
-  }, [semesters]);*/
+  const [courses, setCourses] = useState([]);
 
   function addCourse(e) {
     e.preventDefault();
@@ -34,8 +24,8 @@ export default function Classes({ deleteSemester, semesterId }) {
           <OneClass
             {...course}
             courseId={course.id}
-            key={course.id}
             deleteCourse={deleteCourse}
+            key={course.id}
           />
         );
       })}

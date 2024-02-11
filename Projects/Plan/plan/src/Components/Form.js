@@ -1,22 +1,11 @@
 import FormTop from "./FormTop.js";
 import FormBottom from "./FormBottom.js";
 import FormButtons from "./FormButtons.js";
-import { useState /*, useEffect*/ } from "react";
+import { useState } from "react";
 import html2pdf from "html2pdf.js/dist/html2pdf.min";
-import OneSemester from "./OneSemester.js";
 
 export default function Form() {
-  const [semesters, setSemesters] = useState([<OneSemester />]);
-  /*) => {
-    const localValue = localStorage.getItem("ITEMS");
-    if (localValue == null) return [];
-
-    return JSON.parse(localValue);
-  }*/
-
-  /*useEffect(() => {
-    localStorage.setItem("ITEMS", JSON.stringify(semesters));
-  }, [semesters]);*/
+  const [semesters, setSemesters] = useState([]);
 
   function addSemester() {
     setSemesters((currentSemesters) => {
