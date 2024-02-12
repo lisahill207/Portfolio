@@ -1,4 +1,4 @@
-function MajorInfo() {
+export default function MajorInfo() {
   return (
     <div className="majorInfo">
       <label htmlFor="major">Major:</label>
@@ -84,4 +84,3 @@ function MajorInfo() {
     </div>
   );
 }
-export default MajorInfo;

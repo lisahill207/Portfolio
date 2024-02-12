@@ -1,7 +1,6 @@
-import React from "react";
-import tulogo from "../Images/tulogo.png";
+import IMAGES from "../Images/Images.jsx";
 
-import MobileHeader from "./MobileHeader";
+import MobileHeader from "./MobileHeader.jsx";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCaretDown } from "@fortawesome/free-solid-svg-icons";
@@ -64,7 +63,7 @@ function TUheader() {
             <div id="parallelogram">
               <div className="child">
                 <img
-                  src={tulogo}
+                  src={IMAGES.image1}
                   className="tuLogo"
                   alt="Logo for Towson University"
                 />

@@ -1,5 +1,4 @@
-import React from "react";
-import tulogo from "../Images/tulogo.png";
+import IMAGES from "../Images/Images.jsx";
 
 export default function MobileHeader() {
   return (
@@ -11,7 +10,7 @@ export default function MobileHeader() {
         </div>
         <div className="mobileLogo">
           <img
-            src={tulogo}
+            src={IMAGES.image1}
             className="tuMobileLogo"
             alt="Logo for Towson University"
           />
@@ -22,15 +21,16 @@ export default function MobileHeader() {
           <input
             className="mobileSearchBar"
             type="text"
+            id="mobileSearchBar"
             placeholder="Search"
             aria-required="false"
           />
         </div>
         <div className="mobileHamburger">
           <p>Menu</p>
-          <div class="mobile-menu">
-            <label class="hamburger-menu">
-              <input type="checkbox" />
+          <div className="mobile-menu">
+            <label className="hamburger-menu">
+              <input type="checkbox" id="hamburger-menu" />
             </label>
           </div>
         </div>

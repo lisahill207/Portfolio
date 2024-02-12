@@ -1,4 +1,4 @@
-function StudentInfo() {
+export default function StudentInfo() {
   return (
     <div className="studentInfo">
       <div className="studentNameContainer">
@@ -28,4 +28,3 @@ function StudentInfo() {
     </div>
   );
 }
-export default StudentInfo;

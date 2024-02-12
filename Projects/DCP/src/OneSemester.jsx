@@ -1,5 +1,5 @@
-import Classes from "./Classes";
-import SemesterInfo from "./SemesterInfo";
+import Classes from "./Classes.jsx";
+import SemesterInfo from "./SemesterInfo.jsx";
 
 export default function OneSemester({
   semesters,

@@ -1,9 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import DCP from "./Components/DCP.js";
+import App from "./App.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <DCP />
+    <App />
   </React.StrictMode>
 );

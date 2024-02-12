@@ -1,4 +1,4 @@
-import OneSemester from "./OneSemester.js";
+import OneSemester from "./OneSemester.jsx";
 
 export default function FormBottom({ deleteSemester, semesters }) {
   return (

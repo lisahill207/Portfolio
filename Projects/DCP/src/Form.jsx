@@ -1,6 +1,6 @@
-import FormTop from "./FormTop.js";
-import FormBottom from "./FormBottom.js";
-import FormButtons from "./FormButtons.js";
+import FormTop from "./FormTop.jsx";
+import FormBottom from "./FormBottom.jsx";
+import FormButtons from "./FormButtons.jsx";
 import { useState } from "react";
 import html2pdf from "html2pdf.js/dist/html2pdf.min";
 

@@ -1,4 +1,4 @@
-function AdvisorInfo() {
+export default function AdvisorInfo() {
   return (
     <div className="advisorInfo">
       <div className="advisorNameContainer">
@@ -24,4 +24,3 @@ function AdvisorInfo() {
     </div>
   );
 }
-export default AdvisorInfo;

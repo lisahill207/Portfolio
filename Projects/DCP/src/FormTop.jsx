@@ -1,6 +1,6 @@
-import StudentInfo from "./StudentInfo";
-import AdvisorInfo from "./AdvisorInfo";
-import MajorInfo from "./MajorInfo";
+import  StudentInfo  from "./StudentInfo.jsx";
+import  AdvisorInfo  from "./AdvisorInfo.jsx";
+import  MajorInfo  from "./MajorInfo.jsx";
 
 export default function FormTop() {
   return (

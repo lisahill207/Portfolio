@@ -1,5 +1,5 @@
-import OneClass from "./OneClass.js";
-import { useState } from "react";
+import  OneClass  from "./OneClass.jsx";
+import  useState  from "react";
 
 export default function Classes({ deleteSemester, semesterId }) {
   const [courses, setCourses] = useState([]);
