@@ -303,7 +303,7 @@ footer .footer {
   .navbar {
     display: none;
   }
-  s .mobile-menu,
+  .mobile-menu,
   .mobile-menu::before,
   .mobile-menu::after {
     box-sizing: border-box;
