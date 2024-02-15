@@ -251,11 +251,13 @@ a:visited {
   align-items: center;
   z-index: 2;
 }
+.project-container {
+  margin: 20px;
+}
 .project {
   aspect-ratio: 1/1;
   width: 35vw;
   max-width: 400px;
-  margin: 25px;
 }
 .project-text,
 .icons {
