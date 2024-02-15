@@ -36,6 +36,7 @@ body {
   overflow: hidden;
   position: fixed;
   top: 0;
+  right: 1%;
   width: 100vw;
   z-index: 4;
 }
@@ -144,7 +145,7 @@ a:visited {
 }
 
 .footer {
-  width: 100vw;
+  width: 100dvw;
   height: 25dvh;
   margin: 0;
   padding: 0;
@@ -163,8 +164,8 @@ a:visited {
   justify-content: center;
 }
 #about-main {
-  height: 75vh;
-  width: 100vw;
+  height: 75dvh;
+  width: 100dvw;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -223,7 +224,7 @@ a:visited {
   z-index: 2;
   margin: 0;
   padding: 0;
-  width: 100vw;
+  width: 100dvw;
   min-height: 75dvh;
 }
 #animation-content-projects {
@@ -243,23 +244,22 @@ a:visited {
   color: var(--secondary-color);
   opacity: var(--opacity);
   font-size: 50pt;
-  width: 100vw;
   margin-left: 40px;
+  align-self: flex-start;
 }
 .projects-container {
+  width: 95dvw;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: space-evenly;
   z-index: 2;
 }
-.project-container {
-  margin: 20px;
-}
+
 .project {
   aspect-ratio: 1/1;
   width: 35vw;
   max-width: 400px;
+  margin-bottom: 20px;
 }
 .project-text,
 .icons {
@@ -441,6 +441,7 @@ footer .footer {
     width: 90vw;
     font-size: 8vw;
     text-align: center;
+    margin: 0;
   }
   .projects {
     display: flex;
