@@ -409,9 +409,9 @@ footer .footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 75vh;
-    width: 100vw;
-    margin-top: 5px;
+    height: 75dvh;
+    width: 100dvw;
+    padding: 15px, 0px;
   }
   #about-headshot {
     background-position: center;
@@ -431,7 +431,7 @@ footer .footer {
     max-width: 90vw;
   }
   #about-headshot-img {
-    width: 50vw;
+    width: 40vw;
   }
   .form-icon {
     font-size: 7vw;
