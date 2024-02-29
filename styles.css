@@ -23,6 +23,7 @@
   --x-width: calc(@hamburger-height * 1.41421356237);
 }
 body {
+  overflow-x: hidden;
   font-family: Arial, Helvetica, sans-serif;
   width: 100dvw;
   height: 100dvh;
