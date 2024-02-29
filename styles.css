@@ -37,7 +37,7 @@ body {
   position: fixed;
   top: 0;
   right: 1%;
-  width: 100vw;
+  width: 100dvw;
   z-index: 4;
 }
 .nav-items {
@@ -89,50 +89,50 @@ a:visited {
   list-style: none;
   opacity: 0;
   background: radial-gradient(var(--secondary-color), transparent, transparent);
-  left: 5vw;
+  left: 5dvw;
   animation: animate 20s linear infinite;
   z-index: 1;
   top: 0;
 }
 .dot2 {
-  left: 37vw;
+  left: 37dvw;
   animation-delay: 2s;
 }
 .dot3 {
-  left: 15vw;
+  left: 15dvw;
   animation-delay: 4s;
 }
 .dot4 {
-  left: 60vw;
+  left: 60dvw;
   animation-delay: 7s;
 }
 .dot5 {
-  left: 75vw;
+  left: 75dvw;
   animation-delay: 4s;
 }
 .dot6 {
-  left: 90vw;
+  left: 90dvw;
   animation-delay: 5s;
 }
 @keyframes animate {
   0% {
     transform: scale(0);
     opacity: 0;
-    top: 0vh;
+    top: 0dvh;
   }
   1% {
     transform: scale(0);
     opacity: 1;
-    top: 1vh;
+    top: 1dvh;
   }
   100% {
     transform: scale(10);
     opacity: 0;
-    top: 100vh;
+    top: 100dvh;
   }
 }
 .header {
-  height: 75vh;
+  height: 75dvh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -177,7 +177,7 @@ a:visited {
   align-items: center;
 }
 .languages i {
-  font-size: 4vw;
+  font-size: 4dvw;
   margin-top: 10px;
   opacity: var(--opacity);
 }
@@ -186,7 +186,7 @@ a:visited {
   color: var(--secondary-color);
   opacity: var(--opacity);
   text-align: center;
-  max-width: 60vw;
+  max-width: 60dvw;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -203,7 +203,7 @@ a:visited {
   font-size: 25pt;
   text-align: center;
   opacity: 0.8;
-  margin: 0 2vw;
+  margin: 0 2dvw;
 }
 #about-headshot {
   z-index: 3;
@@ -216,7 +216,7 @@ a:visited {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  width: 26vw;
+  width: 26dvw;
   aspect-ratio: 1 / 1;
 }
 #view-projects {
@@ -238,7 +238,7 @@ a:visited {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100vw;
+  width: 100dvw;
   padding-top: 10px;
 }
 #projects-title {
@@ -258,7 +258,7 @@ a:visited {
 
 .project {
   aspect-ratio: 1/1;
-  width: 35vw;
+  width: 35dvw;
   max-width: 400px;
   margin-bottom: 20px;
 }
@@ -383,7 +383,7 @@ footer .footer {
     background-color: var(--nav-color);
     font-weight: bold;
     max-width: 15rem;
-    min-height: 100vh;
+    min-height: 100dvh;
     position: absolute;
     z-index: 5;
   }
@@ -421,7 +421,7 @@ footer .footer {
     z-index: 1;
   }
   .languages i {
-    font-size: 7vw;
+    font-size: 7dvw;
   }
   #about-bio {
     display: flex;
@@ -429,18 +429,18 @@ footer .footer {
     justify-content: center;
     align-items: center;
     font-size: 15pt;
-    max-width: 90vw;
+    max-width: 90dvw;
   }
   #about-headshot-img {
-    width: 40vw;
+    width: 40dvw;
   }
   .form-icon {
-    font-size: 7vw;
+    font-size: 7dvw;
   }
   #projects-title {
     align-self: center;
-    width: 90vw;
-    font-size: 8vw;
+    width: 90dvw;
+    font-size: 8dvw;
     text-align: center;
     margin: 0;
   }
@@ -451,10 +451,10 @@ footer .footer {
     align-items: center;
   }
   .project {
-    width: 85vw;
+    width: 85dvw;
     margin: 7px;
   }
   .project-description {
-    width: 85vw;
+    width: 85dvw;
   }
 }
