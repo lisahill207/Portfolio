@@ -261,6 +261,10 @@ a:visited {
   color: var(--secondary-color);
   text-align: center;
 }
+.github-link {
+  text-decoration: none;
+  color: var(--secondary-color);
+}
 .project {
   aspect-ratio: 1/1;
   width: 35dvw;
