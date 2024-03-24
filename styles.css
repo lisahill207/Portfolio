@@ -256,7 +256,11 @@ a:visited {
   justify-content: space-evenly;
   z-index: 2;
 }
-
+.read-me {
+  font-size: 18pt;
+  color: var(--secondary-color);
+  text-align: center;
+}
 .project {
   aspect-ratio: 1/1;
   width: 35dvw;
@@ -301,6 +305,7 @@ a:visited {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 footer .footer {
   height: 25dvh;
   position: absolute;
