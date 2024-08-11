@@ -286,7 +286,7 @@ a:visited {
   color: var(--primary-color);
 }
 #project1 {
-  background-image: url("Images/bookshelfScreenshot.png");
+  background-image: url("Images/shoppingScreenshot.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -304,12 +304,11 @@ a:visited {
   background-size: cover;
 }
 #project4 {
-  background-image: url("Images/weatherScreenshot.png");
+  background-image: url("Images/bookshelfScreenshot.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-
 footer .footer {
   height: 25dvh;
   position: absolute;
