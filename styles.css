@@ -303,12 +303,6 @@ a:visited {
   background-repeat: no-repeat;
   background-size: cover;
 }
-#project4 {
-  background-image: url("Images/bookshelfScreenshot.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 footer .footer {
   height: 25dvh;
   position: absolute;
