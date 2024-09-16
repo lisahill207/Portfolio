@@ -177,9 +177,17 @@ a:visited {
   justify-content: center;
   align-items: center;
 }
-.languages i {
-  font-size: 4dvw;
-  margin-top: 10px;
+.languages {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 30dvw;
+  margin-top: 20px;
+}
+.form-icon {
+  font-size: 5dvw;
+  margin-top: 20px;
   opacity: var(--opacity);
 }
 #about-bio {
@@ -286,19 +294,19 @@ a:visited {
   color: var(--primary-color);
 }
 #project1 {
-  background-image: url("Images/shoppingScreenshot.png");
+  background-image: url("Images/tradeScreenshot.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 #project2 {
-  background-image: url("Images/planScreenshot.png");
+  background-image: url("Images/shoppingScreenshot.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 #project3 {
-  background-image: url("Images/tradeScreenshot.png");
+  background-image: url("Images/planScreenshot.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -423,9 +431,7 @@ footer .footer {
     background-size: cover;
     z-index: 1;
   }
-  .languages i {
-    font-size: 7dvw;
-  }
+
   #about-bio {
     display: flex;
     flex-direction: column;
@@ -434,11 +440,14 @@ footer .footer {
     font-size: 15pt;
     max-width: 90dvw;
   }
-  #about-headshot-img {
-    width: 40dvw;
+  .languages {
+    width: 80dvw;
   }
   .form-icon {
     font-size: 7dvw;
+  }
+  #about-headshot-img {
+    width: 50dvw;
   }
   #projects-title {
     align-self: center;
